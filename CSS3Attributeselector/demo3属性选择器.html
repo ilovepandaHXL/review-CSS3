@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			li[gender~=boy]{
+				background-color: blue
+			}
+			/*~=代表该属性词列表中有我们需要的属性*/
+			li[gender~=girl]{
+				background-color: pink
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li gender="boy">小明</li>
+			<li gender="girl">小美</li>
+			<li gender="boy">大黄</li>
+			<li gender="boy">小黄</li>
+			<li gender="boy">大明</li>
+		</ul>
+	</body>
+</html>

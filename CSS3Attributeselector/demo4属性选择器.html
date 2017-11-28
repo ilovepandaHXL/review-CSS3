@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*li[gender~=boy]{
+				background-color: blue
+			}*/
+			
+			/*li[gender~="girl"]{
+				background-color: pink
+			}*/
+			/*li[attr$="alone"]{
+				background-color: yellow
+			}*/
+			
+			li[attr|="boy"]{
+				background-color: blue
+			}
+			
+			
+			/*~=代表该属性词列表中有我们需要的属性*/
+			/*^=value代表该属性中以value为开头的那些*/
+			/*$=value指定属性名，并以value为属性值得结尾*/
+			/**=value指定属性名，属性值包含value*/
+			/*|=value指定属性名，并且以value或者value-开头的属性值*/
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li gender="boy" attr="boy-alone">小明</li>
+			<li gender="girl" attr="girl-alone">小美</li>
+			<li gender="boy " attr="boy">大黄</li>
+			<li gender="boy " >小黄</li>
+			<li gender="boy " >大明</li>
+		</ul>
+	</body>
+</html>
