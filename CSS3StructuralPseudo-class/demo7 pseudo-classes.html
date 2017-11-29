@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪类和伪元素target</title>
+		<style>
+			label{
+				float: left;
+				margin: 0 5px;
+				overflow: hidden;
+				position: relative;
+			}
+			label input{
+				position: absolute;
+				left: -50px;
+				top: -50px;
+			}
+			label span{
+				float: left;
+				height: 50px;
+				width: 50px;
+				border: 2px solid blue;
+			}
+			input:checked~span{
+				background-color: pink;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<label>
+			<input type="radio" name="tab"/>
+			<span></span>
+		</label>
+		<label>
+			<input type="radio" name="tab"/>
+			<span></span>
+		</label>
+		<label>
+			<input type="radio" name="tab"/>
+			<span></span>
+		</label>
+	</body>
+</html>

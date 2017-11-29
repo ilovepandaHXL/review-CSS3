@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			p{
+				border: 1px solid black;
+				font: 12px/30px "宋体";
+				width: 300px;
+			}
+			p:first-line{
+				background-color: pink;
+			}
+			p:first-letter{
+				font-size: 30px;
+			}
+			p::selection{
+				background-color: pink;
+				color: blue;
+			}
+			p:before{
+				content: "哈哈";
+			}
+			/*
+			 * E:first-line 表示E元素的第一行文本
+			 * E:first-letter 表示E元素的第一个文字
+			 * E::selection 选中的文字改变
+			 */
+		</style>
+	</head>
+	<body>
+		<p>好好学习，天天向上！好好学习，天天向上！好好学习，天天向上！好好学习，天天向上！好好学习，天天向上！好好学习，天天向上！好好学习，天天向上！</p>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪类和伪元素target</title>
+		<style>
+			div{
+				height: 300px;
+				width: 500px;
+				background-color: black;
+				font-size: 50px;
+				line-height: 300px;
+				font-family: "微软雅黑";
+				color: pink;
+				text-align: center;
+				display: none;
+			}
+			div:target{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#div1">跳到div1</a>
+		<a href="#div2">跳到div2</a>
+		<a href="#div3">跳到div3</a>
+		<div id="div1">div1</div>
+		<div id="div2">div2</div>
+		<div id="div3">div3</div>
+	</body>
+</html>
