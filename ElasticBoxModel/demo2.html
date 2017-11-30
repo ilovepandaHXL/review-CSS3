@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				font-family: "微软雅黑", "agency fb";
+				height: 100px;
+				border: 5px solid blue;
+				padding: 5px;
+				display: -webkit-box;
+				/*display: -moz-box;*/
+				/*-webkit-box-direction: reverse;*/
+				/*-webkit-box-orient: vertical;*/
+				
+			}
+			
+			/*
+			 * box-orient盒模型布局方向：horizontal水平显示，vertical垂直方向。
+			 * box-direction 元素排列顺序 normal 正序 ，reverse反序
+			 * box-ordinal-group设置元素具体位置
+			 * 
+			 */
+			
+			#box div{
+				height: 100px;
+				width: 100px;
+				background-color: pink;
+				border: 1px solid yellowgreen;
+			}
+			
+			#box div:nth-child(1){
+				-webkit-box-ordinal-group: 2;
+			}
+			
+			#box div:nth-child(2){
+				-webkit-box-ordinal-group: 3;
+			}
+			
+			#box div:nth-child(3){
+				-webkit-box-ordinal-group: 1;
+			}
+			
+			#box div:nth-child(4){
+				-webkit-box-ordinal-group: 5;
+			}
+			
+			#box div:nth-child(5){
+				-webkit-box-ordinal-group: 4;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				font-family: "微软雅黑", "agency fb";
+				height: 100px;
+				border: 5px solid blue;
+				padding: 5px;
+				display: -webkit-box;
+				-webkit-box-pack: justify;
+			}
+			
+			/*
+			 * box-orient盒模型布局方向：horizontal水平显示，vertical垂直方向。
+			 * box-direction 元素排列顺序 normal 正序 ，reverse反序
+			 * box-ordinal-group设置元素具体位置
+			 * 
+			 */
+			
+			#box div{
+				height: 100px;
+				width: 100px;
+				background-color: pink;
+				/*margin: 0 10px;*/
+				border: 1px solid yellowgreen;
+			}
+			
+			
+			/*
+			 * 子元素的尺寸=盒子的尺寸*子元素的box-flex属性值/所有子元素的box-flex属性值之和
+			 */
+			/*
+			 * 富余空间管理 。父级属性
+			 * box-pack:
+			 * start所有子元素在盒子左侧显示，富余空间在右侧
+			 * end所有子元素在盒子右侧显示，富余空间在左侧
+			 * center所有子元素居中
+			 * justify富余空间在子元素之间平均分布
+			 * 
+			 */
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+		</div>
+	</body>
+</html>
