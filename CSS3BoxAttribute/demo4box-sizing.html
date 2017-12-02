@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				height: 100px;
+				width: 100px;
+				padding: 50px;
+				border: 10px solid blue;
+				box-sizing: border-box;
+			}
+			/*
+			 * 怪异模式下：width/height = content
+			 */
+			#div{
+				height: 50px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="div"></div>
+		</div>
+	</body>
+</html>
