@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			#box{
+				width: 302px;
+				margin: 100px auto;
+			}
+			#list{
+				position: relative;
+				height: 150px;
+				width: 300px;
+				border: 1px solid blue;
+			}
+			#list li{
+				position: absolute;
+				width: 150px;
+				height: 150px;
+				background-color: pink;
+				top: 0;
+				left: 0;
+			}
+			#list li:nth-child(1){
+				/*background-color: blue;*/
+				-webkit-transform-origin: right bottom;
+				-webkit-transform: skew(60deg) rotate(30deg);
+			}
+			#list li:nth-child(2){
+				/*background-color: blue;*/
+				/*-webkit-transform-origin: right bottom;
+				-webkit-transform: skew(60deg,0) rotate(30deg);*/
+			}
+			/*#list li:nth-child(2){
+				-webkit-transform: skewX(60deg) rotate(30deg);
+				-webkit-transform-origin: right bottom;
+			}
+			#list li:nth-child(3){
+				-webkit-transform: skewX(60deg) rotate(60deg);
+				-webkit-transform-origin: right bottom;
+			}
+			#list li:nth-child(4){
+				-webkit-transform: skewX(60deg) rotate(90deg);
+				-webkit-transform-origin: right bottom;
+			}
+			#list li:nth-child(5){
+				-webkit-transform: skewX(60deg) rotate(120deg);
+				-webkit-transform-origin: right bottom;
+			}
+			#list li:nth-child(6){
+				-webkit-transform: skewX(60deg) rotate(150deg);
+				-webkit-transform-origin: right bottom;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul id="list">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			#box{
+				height: 100px;
+				width: 100px;
+				background-color: pink;
+				transition: 1s;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<script>
+			box.addEventListener("click",function(){
+				this.style.width = this.offsetWidth + 100 + "px";
+				addTraEnd( box,end);
+			})
+			
+			
+			function end(){
+				this.style.width = this.offsetWidth + 100 + "px"
+				removeTraEnd(box,end)
+			}
+			
+			function addTraEnd(obj,fn){//在transition过渡结束后执行的事件
+				obj.addEventListener("WebkitTransitionEnd",fn,false);
+				obj.addEventListener("transitionend",fn,false)
+			}
+			
+			function removeTraEnd(obj,fn){
+				obj.removeEventListener("WebkitTransitionEnd",fn,false);
+				obj.removeEventListener("transitionend",fn,false)
+			}
+			
+			
+			//注意若有多个样式改变且过渡时间不同，会触发多次transitionend
+			//重复调用问题
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			#box{
+				height: 100px;
+				width: 100px;
+				background-color: pink;
+				float: left;
+				transition: 1s;
+			}
+			#box1{
+				height: 100px;
+				width: 100px;
+				background-color: blue;
+				float: left;
+				transition: 1s;
+			}
+			#box:hover{
+				-webkit-transform: translateX(100px)
+			}
+			#box1:hover{
+				-webkit-transform: translateX(-100px)
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<div id="box1"></div>
+	</body>
+</html>

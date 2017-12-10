@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>transition</title>
+		<style>
+			body{
+				margin: 0;
+			}
+			#box{
+				height: 100px;
+				width: 100px;
+				border: 1px solid blue;
+				background-color: red;
+				transition: 1s width,2s 1s height 
+			}
+			/*
+			 * 2s(过渡时间) 1s(延迟多久执行) height 
+			 */
+			#box:hover{
+				height: 300px;
+				width: 300px;
+				background-color: pink
+			}
+			/*
+			 * 
+			 * transition: 过渡时间  哪个样式要过度 过渡形式( ease(逐渐变慢) linear(匀速) ease-in(加速) ease-out(减速) ease-in-out(先加速后减速) )
+			 * 运动形式也可以使贝赛尔曲线 cubic-bezier(x,x,x,x);
+			 * 
+			 */
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>

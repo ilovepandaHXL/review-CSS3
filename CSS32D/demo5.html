@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				height: 100px;
+				width: 100px;
+				margin: 100px auto;
+				background-color: pink;
+				transition: 3s;
+				-webkit-transform-origin: 0 0;/*2d变换的围绕点*/
+			}
+			#box:hover{
+				-webkit-transform: rotate(720deg) scale(0);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			#box{
+				height: 30px;
+				width: 100px;
+				line-height: 30px;
+				text-align: center;
+				background-color: pink;
+				margin: 100px auto;
+				-webkit-transform: skewX(-30deg);/*制作怪异导航栏*/
+			}
+			#box span{
+				display: block;
+				-webkit-transform: skewX(30deg);
+			}
+			
+			/*#box:hover{
+				-webkit-transform: skewX(-30deg);
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="box"><span>栏目一<span></div>
+		
+	</body>
+</html>
